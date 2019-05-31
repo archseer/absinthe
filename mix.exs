@@ -65,7 +65,8 @@ defmodule Absinthe.Mixfile do
     [
       {:nimble_parsec, "~> 0.4"},
       {:telemetry, "~> 0.4.0"},
-      {:dataloader, "~> 1.0.0", optional: true},
+      # {:dataloader, "~> 1.0.0", optional: true},
+      {:dataloader, github: "archseer/dataloader", branch: "patch-1", optional: true},
       {:decimal, "~> 1.0", optional: true},
       {:ex_doc, "~> 0.20", only: :dev},
       {:benchee, ">= 0.0.0", only: :dev},
